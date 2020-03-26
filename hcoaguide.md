@@ -1,5 +1,3 @@
-Rev 2.2 Niall Currid
-
 Purpose
 =======
 
@@ -80,9 +78,8 @@ required.
 
 -   External Unified Access Gateway (optional) --- 2 x Standard\_A4\_v2
 
--   
+-   Internal Unified Access Gateway (optional) --- 2 x Standard\_A4\_v2
 
-Internal Unified Access Gateway (optional) --- 2 x Standard\_A4\_v2
 
 Requirements for deployment
 ---------------------------
@@ -125,6 +122,8 @@ Requirements for deployment
     subscription. See step 8.b in Create the Required Service Principal
     Needed by the Horizon Cloud Pod Deployer by Creating an Application
     Registration.
+    
+    
 
 Architecture Overview
 =====================
@@ -133,6 +132,8 @@ In a typical deployment of HCoA, these are the components:
 
 ![A screenshot of a map Description automatically
 generated](images/media/image1.png)
+
+
 
 Begin Deployment
 ================
@@ -150,8 +151,9 @@ Begin Deployment
     screen:
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image2.png){width="6.108475503062118in"
-height="2.3402777777777777in"}
+generated](images/media/image2.png)
+
+
 
 Add Capacity
 ============
@@ -160,22 +162,22 @@ Add Capacity
     select the cloud -- (Please) Select Azure
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image3.png){width="6.101479658792651in"
-height="3.0833333333333335in"}
+generated](images/media/image3.png)
+
 
 2.  Next, you'll be prompted for your subscription details, Azure AD
     Tenant ID and the application ID that you setup in the
     prerequisites. Complete all fields and click ADD.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image4.png){width="6.5in"
-height="5.659722222222222in"}
+generated](images/media/image4.png)
+
 
 3.  Complete the POD setup fields:
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image5.png){width="5.9375in"
-height="6.457664041994751in"}
+generated](images/media/image5.png)
+
 
 4.  Complete the UAG Setup. Refer to
     [here](https://docs.vmware.com/en/VMware-Horizon-Cloud-Service/services/hzncloudmsazure.getstarted15/GUID-97521A2A-689A-4D05-9123-E020E967E679.html)
@@ -184,8 +186,8 @@ height="6.457664041994751in"}
 **The certificate has to be in PEM format**
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image6.png){width="5.09375in"
-height="7.413143044619423in"}
+generated](images/media/image6.png)
+
 
 5.  After you complete these fields, you will see a summary of
     information. Click submit to proceed with the deployment. This phase
@@ -197,8 +199,8 @@ height="7.413143044619423in"}
     properly setup on your vNet prior to this step.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image7.png){width="5.385416666666667in"
-height="6.893450349956256in"}
+generated](images/media/image7.png)
+
 
 7.  Once the domain bind is successful, you will be prompted for a
     Domain Join Account. This account is for joining your provisioned
@@ -228,8 +230,8 @@ f.  For additional details and requirements, see [Service Accounts That
     Horizon Cloud Requires for Its Operations]{.underline}
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image8.png){width="6.5in"
-height="3.5902777777777777in"}
+generated](images/media/image8.png)
+
 
 8.  Add the Horizon Administrator Group:
 
@@ -241,15 +243,15 @@ height="3.5902777777777777in"}
     > added to the Super Administrators role in Horizon Cloud.
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image9.png){width="6.261090332458442in"
-height="3.1666666666666665in"}
+generated](images/media/image9.png)
+
 
 9.  At this point you should have completed the General Setup stage, and
     have a screen as follows:
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image10.png){width="6.444031058617673in"
-height="2.9583333333333335in"}
+generated](images/media/image10.png)
+
 
 Desktop Assignment
 ==================
@@ -267,16 +269,16 @@ Desktop Assignment
 2.  On Import VM, click ADD to begin
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image11.png){width="6.0in"
-height="1.864744094488189in"}
+generated](images/media/image11.png)
+
 
 3.  You will have the option to Import a Virtual Machine or Import a
     Windows OS Virtual Machine from the marketplace, which will
     automatically be configured with the Horizon Cloud Agents.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image12.png){width="5.847222222222222in"
-height="2.786801181102362in"}
+generated](images/media/image12.png)
+
 
 To creating Desktop Images for a Horizon Cloud Pod in Microsoft Azure,
 see:
@@ -286,8 +288,8 @@ see:
 4.  For this deployment, I will select an image from the Marketplace.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image13.png){width="3.8125in"
-height="5.854166666666667in"}
+generated](images/media/image13.png)
+
 
 a.  Select an OS -- I have selected Windows 10 Multisession 1909 with
     Office
@@ -316,29 +318,29 @@ g.  Properties - Give a unique name to the desktop that will be used to
 h.  Here is a list of Windows OS Images available as of writing this:
 
 > ![A screenshot of a cell phone Description automatically
-> generated](images/media/image14.png){width="1.7638888888888888in"
-> height="3.1366896325459317in"}
+> generated](images/media/image14.png)
+
 
 i.  Here is a list of the advanced options that you can enable:
 
 > ![A screenshot of a cell phone Description automatically
-> generated](images/media/image15.png){width="4.302083333333333in"
-> height="4.316281714785652in"}
+> generated](images/media/image15.png)
+
 
 5.  Once the import process has completed, you can click Go to proceed
     with image customization.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image16.png){width="5.930555555555555in"
-height="0.7413199912510936in"}
+generated](images/media/image16.png)
+
 
 6.  You should now be presented with an imported VM with an agent status
     of Active. If its not active, select the VM and from the MORE menu,
     select "Reset Agent Pairing"
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image17.png){width="5.916666666666667in"
-height="0.9899037620297463in"}
+generated](images/media/image17.png)
+
 
 7.  At this point now, you can login to this imported VM and begin your
     customizations. When you have completed your customizations, return
@@ -349,14 +351,14 @@ height="0.9899037620297463in"}
 8.  The next step is the Create an image. Click on Create Image \> New
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image18.png){width="5.930555555555555in"
-height="1.6644838145231846in"}
+generated](images/media/image18.png)
+
 
 9.  Complete the required fields for the new image.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image19.png){width="5.298611111111111in"
-height="6.149444444444445in"}
+generated](images/media/image19.png)
+
 
 10. Click Publish when complete. This process can take up to 10 minutes.
 
@@ -364,22 +366,22 @@ height="6.149444444444445in"}
     Monitor \> Activity
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image20.png){width="5.875in"
-height="1.257224409448819in"}
+generated](images/media/image20.png)
+
 
 12. Create Desktop Farm -- Create a farm of virtual machines that will
     be used to provision desktops.
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image21.png){width="5.951388888888889in"
-height="1.5539741907261593in"}
+generated](images/media/image21.png)
+
 
 13. Select New on Create Desktop Farm, you will be presented with the
     following:
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image22.png){width="5.28125in"
-height="6.1964402887139105in"}
+generated](images/media/image22.png)
+
 
 a.  Name: A friendly name for the farm and provide a description.
 
@@ -403,8 +405,8 @@ f.  Complete the remaining fields.
 ```
 14. Management, setting the maintenance and timeout handling on the
     farm![A screenshot of a cell phone Description automatically
-    generated](images/media/image23.png){width="5.715277777777778in"
-    height="6.712399387576553in"}
+    generated](images/media/image23.png)
+    
 
 15. Click next to see a summary and submit to create the farm. This step
     can take up to 30 minutes.
@@ -412,21 +414,21 @@ f.  Complete the remaining fields.
 16. The final step is to assign users to the desktop farm. Select New to
     continue.
 
-![](images/media/image24.png){width="5.6875in"
-height="2.9087674978127733in"}
+![](images/media/image24.png)
+
 
 17. Assign Desktops. There are three options to consider:
 
     a.  **Dedicated**:
 
 Persistent VDI desktop experience which is mapped to a single user.
-
-b.  **Floating**:
+    
+   b.  **Floating**:
 
 > Non-Persistent VDI desktop experience which multiple users can use at
 > different times (i.e. resets after each user session).
 
-c.  **Session**:
+   c.  **Session**:
 
 > Non-persistent RDSH published desktop experience shared across
 > multiple users (i.e. terminal services).
@@ -435,21 +437,21 @@ For this document, I'm selecting Session using Windows 10 Multisession,
 which is similar to RDSH
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image25.png){width="5.590277777777778in"
-height="4.835351049868766in"}
+generated](images/media/image25.png)
+
 
 18. Select your Active Directory User Group and click next and submit.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image26.png){width="5.885037182852144in"
-height="5.097222222222222in"}
+generated](images/media/image26.png)
+
 
 19. At this point now, the deployment of Horizon should be completed for
     you.
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image27.png){width="5.861111111111111in"
-height="2.794673009623797in"}
+generated](images/media/image27.png)
+
 
 Connect to your Horizon Desktops
 ================================
@@ -459,8 +461,8 @@ Connect to your Horizon Desktops
     should see your Gateway Settings
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image28.png){width="6.610820209973753in"
-height="5.385416666666667in"}
+generated](images/media/image28.png)
+
 
 21. From this screen, you can see the Public and private IP addresses
     for your Gateways. You can create an A Record on your public DNS to
@@ -471,8 +473,8 @@ height="5.385416666666667in"}
     a login screen:
 
 ![A screenshot of a computer Description automatically
-generated](images/media/image29.png){width="5.45929571303587in"
-height="4.520833333333333in"}
+generated](images/media/image29.png)
+
 
 23. From this screen, login with the Active Directory Credentials of the
     group that you have assigned to this desktop farm. You can also
@@ -482,14 +484,14 @@ height="4.520833333333333in"}
     desktops (and applications)
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image30.png){width="5.49578302712161in"
-height="2.8541666666666665in"}
+generated](images/media/image30.png)
+
 
 25. You should now be connected to your desktop
 
 ![A screenshot of a computer screen Description automatically
-generated](images/media/image31.png){width="6.5in"
-height="5.1194444444444445in"}
+generated](images/media/image31.png)
+
 
 26. Integration of FSLogix profile management would be recommended and
     well documented
@@ -505,7 +507,7 @@ Resources
 All connection types and display protocols: (link
 [here](https://techzone.vmware.com/resource/vmware-horizon-cloud-service-microsoft-azure-network-ports-diagrams#client_connections_for_horizon))
 
-![A screenshot of a cell phone Description automatically generated](images/media/image32.png){width="6.145833333333333in" height="4.293547681539808in"}
+![A screenshot of a cell phone Description automatically generated](images/media/image32.png)
 =======================================================================================================================================================
 
 VMware Workspace ONE and VMware Horizon Reference Architecture
