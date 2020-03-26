@@ -27,7 +27,7 @@ a.  No Microsoft Azure Policies or Policy Definition configured in the
     that none of your Microsoft Azure Policies block, deny, or restrict
     creation of components on Azure storage account. For information
     about Azure Policies, see the [[Azure Policy
-    documentation]{.underline}](https://docs.microsoft.com/en-us/azure/governance/policy/).
+    documentation]](https://docs.microsoft.com/en-us/azure/governance/policy/).
 
 b.  The pod deployer requires that your Azure storage account allow for
     the deployer to use the Azure StorageV1 account type. Ensure that
@@ -400,9 +400,7 @@ e.  The next few options are pre-completed for you, please read
 
 f.  Complete the remaining fields.
 
-```{=html}
-<!-- -->
-```
+
 14. Management, setting the maintenance and timeout handling on the
     farm![A screenshot of a cell phone Description automatically
     generated](images/media/image23.png)
@@ -421,7 +419,7 @@ f.  Complete the remaining fields.
 
     a.  **Dedicated**:
 
-Persistent VDI desktop experience which is mapped to a single user.
+> Persistent VDI desktop experience which is mapped to a single user.
     
    b.  **Floating**:
 
