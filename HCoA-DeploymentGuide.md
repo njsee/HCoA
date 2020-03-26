@@ -226,8 +226,6 @@ generated](images/media/image7.png)
     Organizational Unit (OU) that you plan to use for farms and VDI
     desktop assignments.
 
-   f.  For additional details and requirements, see [Service Accounts That
-    Horizon Cloud Requires for Its Operations]{.underline}
 
 ![A screenshot of a cell phone Description automatically
 generated](images/media/image8.png)
