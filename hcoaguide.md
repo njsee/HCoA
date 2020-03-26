@@ -132,8 +132,7 @@ Architecture Overview
 In a typical deployment of HCoA, these are the components:
 
 ![A screenshot of a map Description automatically
-generated](images/media/image1.png){width="6.447915573053368in"
-height="3.125in"}
+generated](images/media/image1.png)
 
 Begin Deployment
 ================
