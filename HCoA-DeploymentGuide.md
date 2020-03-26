@@ -209,24 +209,24 @@ generated](images/media/image7.png)
 
 > Domain join account
 
-a.  Active Directory domain join account which can be used by the system
-    to perform Sysprep operations and join computers to the domain,
-    typically a new account (domain join user account)
+   a.  Active Directory domain join account which can be used by the system
+   to perform Sysprep operations and join computers to the domain,
+   typically a new account (domain join user account)
 
-b.  Is a member of the Horizon Cloud Administrators Group
+   b.  Is a member of the Horizon Cloud Administrators Group
 
-c.  Set account password to Never Expire
+   c.  Set account password to Never Expire
 
-d.  This account requires the following Active Directory permissions:
+   d.  This account requires the following Active Directory permissions:
     List Contents, Read All Properties, Read Permissions, Reset
     Password, Create Computer Objects, Delete Computer Objects.
 
-e.  This account also requires the Active Directory permission named
+   e.  This account also requires the Active Directory permission named
     Write All Properties on all descendant objects of the target
     Organizational Unit (OU) that you plan to use for farms and VDI
     desktop assignments.
 
-f.  For additional details and requirements, see [Service Accounts That
+   f.  For additional details and requirements, see [Service Accounts That
     Horizon Cloud Requires for Its Operations]{.underline}
 
 ![A screenshot of a cell phone Description automatically
@@ -417,7 +417,7 @@ f.  Complete the remaining fields.
 
 17. Assign Desktops. There are three options to consider:
 
-    a.  **Dedicated**:
+   a.  **Dedicated**:
 
 > Persistent VDI desktop experience which is mapped to a single user.
     
